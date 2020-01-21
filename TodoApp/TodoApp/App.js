@@ -16,7 +16,7 @@ export default class App extends Component{
         <Text style={styles.title}>To Do</Text>
         <View style={styles.card}>
           <TextInput style={styles.input} placeholder={"New To Do"} value={newToDo} onChangeText={this._crontollNewToDo} placeholderTextColor={"#999"} returnKeyType={"done"} autoCorrect={false}/>
-          <ScrollView>
+          <ScrollView contentContainerStyle={styles.toDos}>
             <ToDo />
           </ScrollView>
         </View>
@@ -69,5 +69,8 @@ const styles = StyleSheet.create({
     borderBottomColor: "#bbb",
     borderBottomWidth: 1,
     fontSize: 25
+  },
+  toDos:{
+    alignItems: 'center'
   }
 });
