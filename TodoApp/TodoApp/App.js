@@ -1,16 +1,6 @@
 import React from "react";
 import * as Font from 'expo-font';
-import {
-  StyleSheet,
-  Text,
-  View,
-  StatusBar,
-  TextInput,
-  Dimensions,
-  Platform,
-  ScrollView,
-  AsyncStorage
-} from "react-native";
+import {StyleSheet,Text,View,StatusBar,TextInput,Dimensions,Platform,ScrollView,AsyncStorage} from "react-native";
 import { AppLoading } from "expo";
 import ToDo from "./ToDo";
 import uuidv1 from "uuid/v1";
